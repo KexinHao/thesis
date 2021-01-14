@@ -22,25 +22,22 @@ body{
   flex-direction: row;
 }
 
-
-.topbar{
-  background-color: blue;
-  order:1;
-  display:inline-block;
-  z-index:999;
-  width:10%;
-  height: 100vh;
-}
 nav{
-  display: none;
-  order: 2;
-  flex-basis: 20%;
-  background: rgb(255,255,255);
+  order: 1;
+  flex-basis: 25%;
+  background: blue;
   height:100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
+#navbar > .title {
+  background-color:white;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+}
 .content{
-    order:3;
+    order:2;
     /* flex-basis: 80%; */
     display: flex;
     flex-direction:column;
@@ -71,9 +68,9 @@ nav{
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "songlist title";
+    "songlist subtitle";
 }
-.title { grid-area: title; }
+.subtitle { grid-area: subtitle; }
 .songlist {
   display: grid;
   grid-template-columns: 1fr;
