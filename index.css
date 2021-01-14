@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
+@font-face {
+  font-family: 'Miriam Libre', sans-serif;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Xanh Mono', monospace;
+}
+a:link{
+  text-decoration: none;
+  color:black;
+}
+a:hover, a:active, a:visited{
+  color:white;
+  background-color: black;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.topbar{
+  background-color: blue;
+  order:1;
+  display:inline-block;
+  z-index:999;
+  width:10%;
+  height: 100vh;
+}
+nav{
+  display: none;
+  order: 2;
+  flex-basis: 20%;
+  background: rgb(255,255,255);
+  height:100vh;
+}
+
+.content{
+    order:3;
+    /* flex-basis: 80%; */
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+
+.informationbox {
+  order:1;
+  flex-basis: 20vh;
+  width: 100%;
+  line-height: 80%;
+}
+.maintextbox{
+  order:2;
+  flex-basis: 80vh;
+  overflow: scroll;
+}
+.maintextbox div:last-of-type{
+  margin-bottom:30vh;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "songlist title";
+}
+.title { grid-area: title; }
+.songlist {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "song1"
+    "song2"
+    "song3";
+  grid-area: songlist;
+}
+.song1 { grid-area: song1; }
+.song2 { grid-area: song2; }
+.song3 { grid-area: song3; }
