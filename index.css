@@ -1,87 +1,14 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Nanum Myeongjo', serif;
-}
-@font-face {
-  font-family: 'Miriam Libre', sans-serif;
-  font-family: 'Nanum Myeongjo', serif;
-  font-family: 'Xanh Mono', monospace;
-}
-a:link{
-  text-decoration: none;
-  color:black;
-}
-a:hover, a:active, a:visited{
-  color:white;
-  background-color: black;
-}
-
 body{
-  display: flex;
-  flex-direction: row;
+  background-image: url("images/b14.jpg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
-
-nav{
-  order: 1;
-  flex-basis: 25%;
-  background: blue;
-  height:100vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.stroke{
+ fill: rgb(199, 135, 255);
 }
-#navbar > .title {
-  background-color:white;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
+.stroke:hover{
+  fill: rgb(200, 255, 43)
 }
-.content{
-    order:2;
-    /* flex-basis: 80%; */
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-start;
+#x{
+  position: 50%;
 }
-
-.informationbox {
-  order:1;
-  flex-basis: 20vh;
-  width: 100%;
-  line-height: 80%;
-}
-.maintextbox{
-  order:2;
-  flex-basis: 80vh;
-  overflow: scroll;
-}
-.maintextbox div:last-of-type{
-  margin-bottom:30vh;
-}
-
-
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "songlist subtitle";
-}
-.subtitle { grid-area: subtitle; }
-.songlist {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "song1"
-    "song2"
-    "song3";
-  grid-area: songlist;
-}
-.song1 { grid-area: song1; }
-.song2 { grid-area: song2; }
-.song3 { grid-area: song3; }
