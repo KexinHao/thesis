@@ -5,7 +5,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: rgb(255, 166, 251)
+  background-color: rgb(255, 214, 253)
 }
 *{
     padding: 0;
@@ -55,9 +55,10 @@ a:hover, a:active, a:visited{
   min-width: 14%;
   /* position:absolute; */
   padding-top:20%;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(254,254,254,0) 100%);
-  /* height:100vh; */
+  background-color: rgb(255, 214, 253)
+  /* background: rgb(255,255,255); */
+  /* background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(254,254,254,0) 100%); */
+  height:100vh;
   overflow: scroll;
 }
 nav > ul.menu {
@@ -100,13 +101,12 @@ nav > ul.menu {
 .maintextbox{
   order:2;
   /* font-size: 4vw; */
-  /* flex-basis: 80vh; */
+  flex-basis: 80vh;
   overflow: scroll;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 10%;
   padding-left: 1vw;
   padding-right: 1vw;
-  padding-bottom: 30%;
 }
 .maintextbox div:last-of-type{
   margin-bottom:30vh;
